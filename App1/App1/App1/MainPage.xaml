@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+
+    <StackLayout BackgroundColor=" #082a50"
+                 Padding="100">
+        <Image Source="logo.jpeg"/>
+
+        <Label Text=" "
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+
+        <Label Text="Usuario UCQ"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               TextColor="white"
+               FontSize="20"/>
+
+        <Entry
+            x:Name="entryUsuario"
+            PlaceholderColor="LightGray"
+            TextColor="White"
+            Placeholder="Usuario"/>
+
+        <Label Text="Contraseña"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               TextColor="white"
+               FontSize="20"/>
+
+        <Entry x:Name="entryContraseña"
+               IsPassword="True"
+               PlaceholderColor="LightGray"
+               TextColor="White"
+               Placeholder="Contraseña" />
+
+        <Label Text=" "
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center"
+               />
+
+        <Button Text="Ingresar"
+                x:Name="buttonIngresar"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                Clicked="MetodoIngresar"/>
+
+    </StackLayout>
+
+</ContentPage>
